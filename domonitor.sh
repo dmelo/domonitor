@@ -2,7 +2,7 @@
 
 PATH=`pwd`/helpers:$PATH
 
-for FILE in `ls services`
+for FILE in `ls services | grep "\.sh$"`
 do
     source ./services/$FILE
     echo -n "$DOMONITOR_SERVICE_NANE "
